@@ -1,5 +1,5 @@
 package pl.gajkow;
 
-public interface Runner {
-    public void execute();
+public abstract class Runner {
+    public abstract void execute();
 }

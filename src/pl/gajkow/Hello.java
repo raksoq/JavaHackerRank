@@ -2,7 +2,7 @@ package pl.gajkow;
 
 import java.util.Scanner;
 
-public class Hello implements Runner{
+public class Hello extends Runner{
 
 
     @Override

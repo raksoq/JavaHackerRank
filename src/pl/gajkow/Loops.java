@@ -3,7 +3,7 @@ package pl.gajkow;
 import java.util.Scanner;
 
 
-public class Loops implements Runner {
+public class Loops extends Runner {
     public void execute(){
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
