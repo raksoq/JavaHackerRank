@@ -19,12 +19,20 @@ public class Loops2 extends Runner{
                  b = scanner.nextInt();
                  n = scanner.nextInt();
 
+
                  if((a >= 0 && b >= 0 && a <= 50 && b <= 50) && (n >= 1 && n <= 15)) {
                      for (int x = 1; x <= n; x++) {
-                         z = z + a + (int)Math.pow(2, x - 1) * b;
-                         System.out.print(z + (a + (int)Math.pow(2, x - 1) * b)  + " ");
+                         if(x == 1) {
+                             z = a + (int) Math.pow(2, x - 1) * b;
+                             System.out.print(z + " ");
+                         }
+                         else if (x > 1) {
+                             z += (int) Math.pow(2, x - 1) * b;
+                             System.out.print(z + " ");
+                         }
 
                      }
+                     System.out.println();
                  }
             }
 
